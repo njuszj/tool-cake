@@ -48,6 +48,7 @@
             this.HomePage = new System.Windows.Forms.TabPage();
             this.HashPage = new System.Windows.Forms.TabPage();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.NetworkPage = new System.Windows.Forms.TabPage();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
             this.tabControl1.SuspendLayout();
@@ -122,7 +123,7 @@
             // copyToClipBoard_Btn
             // 
             this.copyToClipBoard_Btn.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.copyToClipBoard_Btn.Location = new System.Drawing.Point(917, 433);
+            this.copyToClipBoard_Btn.Location = new System.Drawing.Point(931, 434);
             this.copyToClipBoard_Btn.Name = "copyToClipBoard_Btn";
             this.copyToClipBoard_Btn.Size = new System.Drawing.Size(166, 39);
             this.copyToClipBoard_Btn.TabIndex = 7;
@@ -216,10 +217,11 @@
             // 
             this.tabControl1.Controls.Add(this.HomePage);
             this.tabControl1.Controls.Add(this.HashPage);
-            this.tabControl1.Location = new System.Drawing.Point(22, 12);
+            this.tabControl1.Controls.Add(this.NetworkPage);
+            this.tabControl1.Location = new System.Drawing.Point(12, 12);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1276, 762);
+            this.tabControl1.Size = new System.Drawing.Size(1570, 840);
             this.tabControl1.TabIndex = 13;
             // 
             // HomePage
@@ -228,7 +230,7 @@
             this.HomePage.Location = new System.Drawing.Point(4, 25);
             this.HomePage.Name = "HomePage";
             this.HomePage.Padding = new System.Windows.Forms.Padding(3);
-            this.HomePage.Size = new System.Drawing.Size(1268, 733);
+            this.HomePage.Size = new System.Drawing.Size(1562, 811);
             this.HomePage.TabIndex = 0;
             this.HomePage.Text = "首页";
             this.HomePage.UseVisualStyleBackColor = true;
@@ -249,7 +251,7 @@
             this.HashPage.Location = new System.Drawing.Point(4, 25);
             this.HashPage.Name = "HashPage";
             this.HashPage.Padding = new System.Windows.Forms.Padding(3);
-            this.HashPage.Size = new System.Drawing.Size(1268, 733);
+            this.HashPage.Size = new System.Drawing.Size(1562, 811);
             this.HashPage.TabIndex = 1;
             this.HashPage.Text = "哈希计算";
             this.HashPage.UseVisualStyleBackColor = true;
@@ -262,6 +264,15 @@
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(195, 197);
             this.flowLayoutPanel1.TabIndex = 13;
+            // 
+            // NetworkPage
+            // 
+            this.NetworkPage.Location = new System.Drawing.Point(4, 25);
+            this.NetworkPage.Name = "NetworkPage";
+            this.NetworkPage.Size = new System.Drawing.Size(1562, 811);
+            this.NetworkPage.TabIndex = 2;
+            this.NetworkPage.Text = "网络管理";
+            this.NetworkPage.UseVisualStyleBackColor = true;
             // 
             // HashForm
             // 
@@ -307,6 +318,7 @@
         private System.Windows.Forms.TabPage HomePage;
         private System.Windows.Forms.TabPage HashPage;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.TabPage NetworkPage;
     }
 }
 
