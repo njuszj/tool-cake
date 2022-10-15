@@ -44,15 +44,9 @@
             this.button2 = new System.Windows.Forms.Button();
             this.copied_label = new System.Windows.Forms.Label();
             this.input_TextBox = new System.Windows.Forms.TextBox();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.HomePage = new System.Windows.Forms.TabPage();
-            this.HashPage = new System.Windows.Forms.TabPage();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.NetworkPage = new System.Windows.Forms.TabPage();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
-            this.tabControl1.SuspendLayout();
-            this.HashPage.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -60,7 +54,7 @@
             // 
             this.hash_Label.AutoSize = true;
             this.hash_Label.Font = new System.Drawing.Font("宋体", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.hash_Label.Location = new System.Drawing.Point(52, 34);
+            this.hash_Label.Location = new System.Drawing.Point(31, 28);
             this.hash_Label.Name = "hash_Label";
             this.hash_Label.Size = new System.Drawing.Size(297, 40);
             this.hash_Label.TabIndex = 0;
@@ -70,7 +64,7 @@
             // resText
             // 
             this.resText.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.resText.Location = new System.Drawing.Point(101, 434);
+            this.resText.Location = new System.Drawing.Point(80, 428);
             this.resText.Name = "resText";
             this.resText.ReadOnly = true;
             this.resText.Size = new System.Drawing.Size(798, 39);
@@ -81,7 +75,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("宋体", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label1.Location = new System.Drawing.Point(39, 441);
+            this.label1.Location = new System.Drawing.Point(18, 435);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(56, 23);
             this.label1.TabIndex = 3;
@@ -90,7 +84,7 @@
             // calMd5_Btn
             // 
             this.calMd5_Btn.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.calMd5_Btn.Location = new System.Drawing.Point(59, 314);
+            this.calMd5_Btn.Location = new System.Drawing.Point(38, 308);
             this.calMd5_Btn.Name = "calMd5_Btn";
             this.calMd5_Btn.Size = new System.Drawing.Size(112, 33);
             this.calMd5_Btn.TabIndex = 4;
@@ -101,7 +95,7 @@
             // calSha256_Btn
             // 
             this.calSha256_Btn.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.calSha256_Btn.Location = new System.Drawing.Point(295, 314);
+            this.calSha256_Btn.Location = new System.Drawing.Point(274, 308);
             this.calSha256_Btn.Name = "calSha256_Btn";
             this.calSha256_Btn.Size = new System.Drawing.Size(112, 33);
             this.calSha256_Btn.TabIndex = 5;
@@ -112,7 +106,7 @@
             // calSha1_Btn
             // 
             this.calSha1_Btn.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.calSha1_Btn.Location = new System.Drawing.Point(177, 314);
+            this.calSha1_Btn.Location = new System.Drawing.Point(156, 308);
             this.calSha1_Btn.Name = "calSha1_Btn";
             this.calSha1_Btn.Size = new System.Drawing.Size(112, 33);
             this.calSha1_Btn.TabIndex = 6;
@@ -123,7 +117,7 @@
             // copyToClipBoard_Btn
             // 
             this.copyToClipBoard_Btn.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.copyToClipBoard_Btn.Location = new System.Drawing.Point(931, 434);
+            this.copyToClipBoard_Btn.Location = new System.Drawing.Point(910, 428);
             this.copyToClipBoard_Btn.Name = "copyToClipBoard_Btn";
             this.copyToClipBoard_Btn.Size = new System.Drawing.Size(166, 39);
             this.copyToClipBoard_Btn.TabIndex = 7;
@@ -148,7 +142,7 @@
             // 
             this.groupBox1.Controls.Add(this.upperCase_Radio);
             this.groupBox1.Controls.Add(this.lowerCase_Ratio);
-            this.groupBox1.Location = new System.Drawing.Point(723, 314);
+            this.groupBox1.Location = new System.Drawing.Point(702, 308);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(176, 100);
             this.groupBox1.TabIndex = 9;
@@ -195,7 +189,7 @@
             // 
             this.copied_label.AutoSize = true;
             this.copied_label.Font = new System.Drawing.Font("宋体", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.copied_label.Location = new System.Drawing.Point(1027, 486);
+            this.copied_label.Location = new System.Drawing.Point(1006, 480);
             this.copied_label.Name = "copied_label";
             this.copied_label.Size = new System.Drawing.Size(56, 13);
             this.copied_label.TabIndex = 12;
@@ -206,73 +200,21 @@
             // input_TextBox
             // 
             this.input_TextBox.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.input_TextBox.Location = new System.Drawing.Point(59, 97);
+            this.input_TextBox.Location = new System.Drawing.Point(38, 91);
             this.input_TextBox.Multiline = true;
             this.input_TextBox.Name = "input_TextBox";
             this.input_TextBox.Size = new System.Drawing.Size(840, 197);
             this.input_TextBox.TabIndex = 1;
             this.input_TextBox.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // tabControl1
-            // 
-            this.tabControl1.Controls.Add(this.HomePage);
-            this.tabControl1.Controls.Add(this.HashPage);
-            this.tabControl1.Controls.Add(this.NetworkPage);
-            this.tabControl1.Location = new System.Drawing.Point(12, 12);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1570, 840);
-            this.tabControl1.TabIndex = 13;
-            // 
-            // HomePage
-            // 
-            this.HomePage.Cursor = System.Windows.Forms.Cursors.Cross;
-            this.HomePage.Location = new System.Drawing.Point(4, 25);
-            this.HomePage.Name = "HomePage";
-            this.HomePage.Padding = new System.Windows.Forms.Padding(3);
-            this.HomePage.Size = new System.Drawing.Size(1562, 811);
-            this.HomePage.TabIndex = 0;
-            this.HomePage.Text = "首页";
-            this.HomePage.UseVisualStyleBackColor = true;
-            // 
-            // HashPage
-            // 
-            this.HashPage.Controls.Add(this.flowLayoutPanel1);
-            this.HashPage.Controls.Add(this.hash_Label);
-            this.HashPage.Controls.Add(this.groupBox1);
-            this.HashPage.Controls.Add(this.copied_label);
-            this.HashPage.Controls.Add(this.input_TextBox);
-            this.HashPage.Controls.Add(this.resText);
-            this.HashPage.Controls.Add(this.label1);
-            this.HashPage.Controls.Add(this.calMd5_Btn);
-            this.HashPage.Controls.Add(this.copyToClipBoard_Btn);
-            this.HashPage.Controls.Add(this.calSha256_Btn);
-            this.HashPage.Controls.Add(this.calSha1_Btn);
-            this.HashPage.Location = new System.Drawing.Point(4, 25);
-            this.HashPage.Name = "HashPage";
-            this.HashPage.Padding = new System.Windows.Forms.Padding(3);
-            this.HashPage.Size = new System.Drawing.Size(1562, 811);
-            this.HashPage.TabIndex = 1;
-            this.HashPage.Text = "哈希计算";
-            this.HashPage.UseVisualStyleBackColor = true;
-            // 
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.Controls.Add(this.button1);
             this.flowLayoutPanel1.Controls.Add(this.button2);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(928, 97);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(907, 91);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(195, 197);
             this.flowLayoutPanel1.TabIndex = 13;
-            // 
-            // NetworkPage
-            // 
-            this.NetworkPage.Location = new System.Drawing.Point(4, 25);
-            this.NetworkPage.Name = "NetworkPage";
-            this.NetworkPage.Size = new System.Drawing.Size(1562, 811);
-            this.NetworkPage.TabIndex = 2;
-            this.NetworkPage.Text = "网络管理";
-            this.NetworkPage.UseVisualStyleBackColor = true;
             // 
             // HashForm
             // 
@@ -280,19 +222,27 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(1582, 853);
-            this.Controls.Add(this.tabControl1);
+            this.Controls.Add(this.flowLayoutPanel1);
+            this.Controls.Add(this.hash_Label);
+            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.calSha1_Btn);
+            this.Controls.Add(this.copied_label);
+            this.Controls.Add(this.calSha256_Btn);
+            this.Controls.Add(this.input_TextBox);
+            this.Controls.Add(this.copyToClipBoard_Btn);
+            this.Controls.Add(this.resText);
+            this.Controls.Add(this.calMd5_Btn);
+            this.Controls.Add(this.label1);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "HashForm";
-            this.Text = "工具箱";
+            this.Text = "哈希计算";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).EndInit();
-            this.tabControl1.ResumeLayout(false);
-            this.HashPage.ResumeLayout(false);
-            this.HashPage.PerformLayout();
             this.flowLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -314,11 +264,7 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label copied_label;
         private System.Windows.Forms.TextBox input_TextBox;
-        private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.TabPage HomePage;
-        private System.Windows.Forms.TabPage HashPage;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private System.Windows.Forms.TabPage NetworkPage;
     }
 }
 

@@ -16,7 +16,8 @@ namespace MyToolBox
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new HashForm());
+            //Application.Run(new HashForm());
+            Application.Run(new NetworkForm());
         }
     }
 }
